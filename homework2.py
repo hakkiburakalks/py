@@ -5,13 +5,8 @@ print(studentList)
 def addStudent(*nameSurname):
     studentList.extend(nameSurname)
 
-
-
-
 def deleteStudent(nameSurname):
     studentList.remove(nameSurname)
-
-
 
 def showStudent():
   
@@ -20,20 +15,11 @@ def showStudent():
         i += 1
 
 
-
-
-
 def numberOfStudent():
     i = 0
     while i < len(studentList):
         print(str(i+1) +" Nolu Öğrenci "+studentList[i])
         i +=1
-
-
-
-
-
-
 addStudent("Yavuz Çağrı") 
 print(studentList)   
 addStudent("Harun Yıld","Ömer Faruk","Sedat Diz") 
