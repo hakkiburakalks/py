@@ -20,8 +20,7 @@ class testClass:
           button.click()
           
          
-          while True:
-               continue
+          
           
     def noPassword(self):
            driver = webdriver.Chrome(ChromeDriverManager().install())
@@ -38,8 +37,7 @@ class testClass:
            button = driver.find_element(By.NAME, "login-button")
            button.click()
 
-           while True:
-               continue
+           
     def lockedOutUser(self):
         driver = webdriver.Chrome(ChromeDriverManager().install())
         driver.get("https://www.saucedemo.com/")
@@ -54,8 +52,7 @@ class testClass:
         button = driver.find_element(By.NAME, "login-button")
         button.click()
 
-        while True:
-            continue
+        
     def xIcon(self):
         driver = webdriver.Chrome(ChromeDriverManager().install())
         driver.get("https://www.saucedemo.com/")
@@ -74,8 +71,7 @@ class testClass:
         iconButton.click()
         sleep(5)
 
-        while True:
-               continue
+        
 
     def standartUser(self):
         driver = webdriver.Chrome(ChromeDriverManager().install())
@@ -95,17 +91,17 @@ class testClass:
         numberOfProduct = f"Girilen ekranda tam olarak {len(productList)} kadar ürün gözükmektedir"
         print(numberOfProduct)  
 
-        while True:
-            continue
-
+        
 
 
 
 
 
 test = testClass()
-# test.noUserNameAndNoPassword()
-# test.noPassword()
-#test.lockedOutUser()
-#test.xIcon()
+test.noUserNameAndNoPassword()
+test.noPassword()
+test.lockedOutUser()
+test.xIcon()
 test.standartUser()
+while True:
+    continue
